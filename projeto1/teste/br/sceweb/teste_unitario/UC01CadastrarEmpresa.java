@@ -18,7 +18,7 @@ public class UC01CadastrarEmpresa {
 	static Empresa empresa;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		empresaDAO = new EmpresaDAO(ObtemConfiguraDB.configuracaoFIP());
+		empresaDAO = new EmpresaDAO(ObtemConfiguraDB.configuracaoDB4free());
 		empresa = ObtemEmpresa.comDadosValidos();
 		
 	}

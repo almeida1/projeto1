@@ -19,4 +19,12 @@ public class ObtemConfiguraDB {
     		String senha = "alunoFatec";
     		return new ConfiguraDB(url, driver,usuario,senha);
         }
+      public static ConfiguraDB configuracaoDB4free(){
+        	
+    	    String url = "jdbc:mysql://mysql8.db4free.net:3307/sceweb";
+    		String driver = "com.mysql.jdbc.Driver";
+    		String usuario = "alunos";
+    		String senha = "alunos";
+      		return new ConfiguraDB(url, driver,usuario,senha);
+          }
 }
