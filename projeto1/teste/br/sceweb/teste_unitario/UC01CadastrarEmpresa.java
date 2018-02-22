@@ -40,6 +40,12 @@ public class UC01CadastrarEmpresa {
 	public void CT01UC01FBCadastra_com_sucesso() {
 				assertEquals(1,empresaDAO.adiciona(empresa));
 	}
+	/**
+	 * ID - CT02UC01A1Cadastra_com_cnpj_invalido
+	 * Objetivo - verificar o comportamento do sistema na inclusao de empresa com 
+	 * cnpj invalido
+	 * Pré-condiçao - O cnpj 89424 nao esta cadastrado.
+	 */
 	@Test
 	public void CT02UC01FBCadastra_cnpj_invalido() {
 		assertEquals("CNPJ invalido.",empresa.setCnpj("89424"));
